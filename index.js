@@ -10,11 +10,6 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'email',
-    message: 'What is your email address?'
-  },
-  {
-    type: 'input',
     name: 'title',
     message: "What is your project's name?"
   },
@@ -65,8 +60,9 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer
     .prompt(questions)
-    .then( answers => {
-      writeToFile('readme1.md', generateMarkdown(answers))
+    .then( async answers => {
+      const markDown = await generateMarkdown(answers)
+      writeToFile('readme1.md', markDown)
     });
 }
 

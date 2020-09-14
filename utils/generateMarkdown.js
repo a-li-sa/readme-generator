@@ -1,10 +1,10 @@
-// const api = require('./api.js');
+const api = require('./api.js');
 
-function generateMarkdown(data) {
+async function generateMarkdown(data) {
+  const gitHubData = await api.getUser(data.username);
+
   return `
 # ${data.title}
-
-![]();
 
 ## Description
 
@@ -45,8 +45,9 @@ ${data.tests}
 \`\`\`
 
 ## Questions
-If you have any questions about the repo, open an issue or contact ${data.username} at ${data.email}.
+If you have any questions about the repo, open an issue or contact ${data.username} at ${gitHubData.email}.
 
+![](${gitHubData.avatar_url});
 `;
 }
 

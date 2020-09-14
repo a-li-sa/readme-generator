@@ -1,11 +1,9 @@
 
-# 
-
-![]([object Promise])
+# Good README Generator
 
 ## Description
 
-
+A basic README Generator that creates a markdown file with MIT licensing
 
 ## Table of Contents
 
@@ -21,14 +19,14 @@
 To install necessary dependencies, run the following command:
 
 ```
-
+npm i
 ```
 
 ## Usage
-Run .
+Run npm i.
 
 ##License
-Copyright (c)  
+Copyright (c) 2020 Alisa Poon
 
 ## Contributing
 
@@ -38,9 +36,10 @@ Make a pull request.
 
 To run tests, run the following command:
 ```
-
+npm test
 ```
 
 ## Questions
-If you have any questions about the repo, open an issue or contact a-li-sa at .
+If you have any questions about the repo, open an issue or contact a-li-sa at aypoon@ucdavis.edu.
 
+![](https://avatars0.githubusercontent.com/u/65376492?v=4);

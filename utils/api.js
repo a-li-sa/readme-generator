@@ -15,6 +15,5 @@ const api = {
     }
   }
 }
-console.log(api.getUser('a-li-sa'))
 
 module.exports = api;
