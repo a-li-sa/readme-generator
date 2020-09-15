@@ -1,5 +1,7 @@
+const token = require('../token.js');
+
 const config = {
-  headers: {'Authorization': 'token 8317b8e3cd2282ea23f7796e5a4dbf2cd22ec6d6'}
+  headers: {'Authorization': token}
 }
 const api = {
   async getUser(username) {
