@@ -11,7 +11,8 @@ URL of the GitHub repository: https://github.com/a-li-sa/readme-generator
 ## Table of Contents 
 
 * [Description](#description)
-* [View](#view)
+  * [Acceptance Criteria](#acceptance-criteria)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Built With](#built-with)
 * [Credits](#credits)
@@ -24,15 +25,6 @@ URL of the GitHub repository: https://github.com/a-li-sa/readme-generator
 This command-line application is for developers who need to easily put together a good README for a new project. This application dynamically generates a README.md from a user's input. It allows for quick and easy generation of a project README to get started quickly, and it allows for project creators to spend more time working on finishing the project and less time creating a good README.
 
 ### Acceptance Criteria 
-
-Minimum Qualifications
-
-- Functional, deployed application.
-- GitHub repository with a unique name and a README describing project.
-- The generated README includes a bio image from the user's GitHub profile.
-- The generated README includes the user's email.
-- The generated README includes the following sections: 
-- The generated README includes 1 badge that's specific to the repository.
 
 GIVEN the developer has a GitHub profile and a repository
 
@@ -54,7 +46,7 @@ node index.js
 ```
 The user will be prompted for their GitHub username, which will be used to make a call to the GitHub API to retrieve their email and profile image. They will then be prompted with questions about their project.
 
-The README file will be named 'readme1.md' and be populated with the following:
+The README file will be named "readme1.md" and be populated with the following:
 
 * Project title
 * License badge
