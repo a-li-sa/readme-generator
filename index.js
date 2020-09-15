@@ -19,34 +19,32 @@ const questions = [
     message: 'Please write a short description of your project'
   },
   {
-    type: 'input',
+    type: 'list',
     name: 'license',
-    message: 'What is your full name?'
-  },
-  {
-    type: 'input',
-    name: 'year',
-    message: 'What is year is it?'
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'Apache License 2.0', 'GNU GPL v3', 'Mozilla Public License 2.0', 'Boost Software License 1.0']
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'What command should be run to install dependencies?'
+    message: 'What command should be run to install dependencies? If left blank, the default input is the following:',
+    default: 'npm i'
   },
   {
     type: 'input',
     name: 'tests',
-    message: 'What command should be run to run tests?'
+    message: 'What command should be run to run tests? If left blank, the default input is the following:',
+    default: 'npm test'
   },
   {
     type: 'input',
     name: 'repo',
-    message: 'What does the user need to know about using the repo?'
+    message: 'What does the user need to know about using the repo? This input may be left blank.'
   },
   {
     type: 'input',
     name: 'contributing',
-    message: 'What does the user need to know about contributing to the repo?',
+    message: 'What does the user need to know about contributing to the repo? If left blank, the default input is the following:',
     default: 'Make a pull request.'
   }
 ];
