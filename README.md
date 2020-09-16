@@ -32,10 +32,12 @@ GIVEN the developer has a GitHub profile and a repository
 
 ## Installation
 
-To install necessary dependencies (axios and inquirer), run the following command:
+The user must have Node installed. To install necessary dependencies (axios and inquirer), run the following command:
 ```
 npm i
 ```
+
+The user must also [create their own personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) in order to retrieve their email using the API call.
 
 ## Usage
 
